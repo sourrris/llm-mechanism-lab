@@ -96,7 +96,7 @@ The sequence is compressed from implementation-first and interpretability-first 
 
 ## Validation
 
-The starter gates were checked against a separate reference implementation: 27/27 tests pass. See [VALIDATION.md](VALIDATION.md).
+The starter gates were checked against a separate reference implementation: 31/31 tests pass. See [VALIDATION.md](VALIDATION.md).
 
 ## License
 

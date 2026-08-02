@@ -29,10 +29,10 @@ Validated before delivery on 2026-08-03.
 The learner repository intentionally contains TODOs and therefore its future-day unit tests fail until implemented. To validate the tests themselves, a separate temporary reference implementation was created outside this repository and run against the full suite:
 
 ```text
-27 passed
+31 passed
 ```
 
-Coverage includes stable softmax, causal masking, cross-entropy, deterministic byte-level BPE, scaled attention, RMSNorm, SwiGLU, RoPE integration, multi-head attention, mini-GPT causality, AdamW, temperature/top-k/top-p filtering, generation and DPO loss.
+Coverage includes stable softmax, causal masking, cross-entropy, deterministic byte-level BPE, scaled attention, RMSNorm, SwiGLU, RoPE integration, multi-head attention, mini-GPT causality, AdamW, shifted next-token loss, joint gradient clipping, a complete train step, temperature/top-k/top-p filtering, generation and DPO loss.
 
 The reference implementation is deliberately not included. The tests are the teacher; the first implementation remains yours.
 
