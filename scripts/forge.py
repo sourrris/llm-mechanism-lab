@@ -87,6 +87,19 @@ def evidence_dir(day: int) -> Path:
 
 
 def start_day(day: int) -> None:
+    progress = load_progress()
+    current = min(int(progress["current_day"]), 14)
+    completed = set(progress.get("completed_days", []))
+    if day > current:
+        raise SystemExit(
+            f"Day {day:02d} is locked. Current gate: Day {current:02d}. "
+            f"Pass it with `make complete DAY={current}` first."
+        )
+    if day < current and day not in completed:
+        raise SystemExit(
+            f"Day {day:02d} is not the current gate and is not recorded complete. "
+            "Repair progress.json only if its history is genuinely incorrect."
+        )
     record = day_record(day)
     target = evidence_dir(day)
     target.mkdir(parents=True, exist_ok=True)
