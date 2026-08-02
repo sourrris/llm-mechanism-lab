@@ -3,7 +3,7 @@ set -euo pipefail
 
 OWNER="${GITHUB_OWNER:-sourrris}"
 REPO="${1:-llm-mechanism-lab}"
-VISIBILITY="${2:-public}"
+VISIBILITY="${2:-private}"
 DESCRIPTION="A proof-driven 14-day forge for building, diagnosing and causally interpreting language models."
 
 if ! command -v gh >/dev/null 2>&1; then

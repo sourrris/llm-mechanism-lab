@@ -14,7 +14,7 @@ gh auth login
 From the repository root:
 
 ```bash
-./scripts/publish_to_github.sh llm-mechanism-lab public
+./scripts/publish_to_github.sh llm-mechanism-lab private
 ```
 
 That command will:
@@ -24,12 +24,12 @@ That command will:
 3. Create the labels `day`, `evidence`, `blocked` and `research`.
 4. Create one evidence-gated GitHub issue for each of the fourteen days.
 
-Use `private` instead of `public` as the second argument when needed.
+The default is private because daily evidence may contain personal notes. Make the repository public only after reviewing or removing sensitive evidence.
 
 ## Manual fallback
 
 ```bash
-gh repo create sourrris/llm-mechanism-lab --public --source=. --remote=origin --push
+gh repo create sourrris/llm-mechanism-lab --private --source=. --remote=origin --push
 ./scripts/setup_github_issues.sh sourrris/llm-mechanism-lab
 ```
 
