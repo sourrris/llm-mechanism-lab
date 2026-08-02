@@ -5,6 +5,7 @@ import math
 import torch
 from torch import Tensor, nn
 
+from .layers import apply_rope
 from .tensor_ops import causal_attention_mask, stable_softmax
 
 
@@ -34,5 +35,9 @@ class MultiHeadAttention(nn.Module):
         self.out = nn.Linear(d_model, d_model, bias=bias)
 
     def forward(self, x: Tensor) -> tuple[Tensor, Tensor]:
-        """Causal self-attention over x shaped [batch, time, d_model]."""
-        raise NotImplementedError("Day 04: implement multi-head attention")
+        """Causal self-attention over x shaped [batch, time, d_model].
+
+        Required path: project Q/K/V, split heads, apply RoPE to Q and K,
+        run causal attention, merge heads, then apply the output projection.
+        """
+        raise NotImplementedError("Day 04: implement multi-head attention with RoPE")

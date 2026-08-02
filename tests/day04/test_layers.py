@@ -1,5 +1,6 @@
 import torch
 
+import llm_mechanism_lab.attention as attention_module
 from llm_mechanism_lab.attention import MultiHeadAttention
 from llm_mechanism_lab.layers import RMSNorm, SwiGLU, apply_rope
 
@@ -40,3 +41,19 @@ def test_multihead_shape_and_causality():
     assert y.shape == x.shape
     assert p.shape == (2, 3, 6, 6)
     assert torch.equal(p.triu(diagonal=1), torch.zeros_like(p).triu(diagonal=1))
+
+
+def test_multihead_applies_rope_to_queries_and_keys(monkeypatch):
+    calls = []
+    original = attention_module.apply_rope
+
+    def recording_rope(x, positions, base=10_000.0):
+        calls.append((x.shape, positions.detach().cpu().tolist()))
+        return original(x, positions, base)
+
+    monkeypatch.setattr(attention_module, "apply_rope", recording_rope)
+    layer = MultiHeadAttention(12, 3)
+    layer(torch.randn(2, 6, 12))
+    assert len(calls) == 2
+    assert all(shape == (2, 3, 6, 4) for shape, _ in calls)
+    assert all(positions == list(range(6)) for _, positions in calls)
