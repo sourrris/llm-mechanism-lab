@@ -93,6 +93,10 @@ A bad day still has a floor. The floor prevents a zero; it does **not** falsely 
 
 The sequence is compressed from implementation-first and interpretability-first primary materials: Stanford CS336, ARENA Transformer Interpretability, TransformerLens, NNsight, the original Transformer paper and causal circuit work. See [resources/OFFICIAL_SOURCES.md](resources/OFFICIAL_SOURCES.md).
 
+## Validation
+
+The starter gates were checked against a separate reference implementation: 27/27 tests pass. See [VALIDATION.md](VALIDATION.md).
+
 ## License
 
 MIT. The learning evidence is yours; the standard is non-negotiable.
