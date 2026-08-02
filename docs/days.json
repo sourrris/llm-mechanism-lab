@@ -1,0 +1,148 @@
+{
+  "program": "LLM Mechanism Forge",
+  "owner": "Sourish Chakraborty",
+  "start_date": "2026-08-03",
+  "timezone": "Asia/Kolkata",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-08-03",
+      "slug": "text-to-probabilities",
+      "title": "Text \u2192 logits \u2192 probabilities",
+      "core": "Build the numerical atoms of an autoregressive language model and trace one next-token prediction end to end.",
+      "floor": "Compute one three-logit softmax by hand, implement stable_softmax, and write 150 words explaining logits versus probabilities.",
+      "file": "curriculum/day-01-text-to-probabilities.md",
+      "tests": true
+    },
+    {
+      "day": 2,
+      "date": "2026-08-04",
+      "slug": "byte-pair-tokenization",
+      "title": "Build a byte-level BPE tokenizer",
+      "core": "Understand how raw text becomes the discrete sequence the transformer actually sees.",
+      "floor": "Implement UTF-8 byte encode/decode round-trip and manually perform three BPE merges on one short string.",
+      "file": "curriculum/day-02-byte-pair-tokenization.md",
+      "tests": true
+    },
+    {
+      "day": 3,
+      "date": "2026-08-05",
+      "slug": "attention-by-hand",
+      "title": "Attention by hand",
+      "core": "Implement single-head causal self-attention and explain information routing precisely.",
+      "floor": "Calculate one attention row by hand and implement the score, mask and softmax portion of scaled_dot_product_attention.",
+      "file": "curriculum/day-03-attention-by-hand.md",
+      "tests": true
+    },
+    {
+      "day": 4,
+      "date": "2026-08-06",
+      "slug": "transformer-block",
+      "title": "Build the transformer block",
+      "core": "Assemble multi-head attention, residual pathways, RMSNorm, RoPE and SwiGLU into one decoder block.",
+      "floor": "Implement RMSNorm and one residual sublayer, then explain why the residual path protects information flow.",
+      "file": "curriculum/day-04-transformer-block.md",
+      "tests": true
+    },
+    {
+      "day": 5,
+      "date": "2026-08-07",
+      "slug": "mini-gpt-forward",
+      "title": "Assemble a mini-GPT",
+      "core": "Build the complete decoder-only forward pass from token IDs to next-token logits.",
+      "floor": "Wire embeddings \u2192 one block \u2192 final norm \u2192 logits and pass the output-shape test.",
+      "file": "curriculum/day-05-mini-gpt-forward.md",
+      "tests": true
+    },
+    {
+      "day": 6,
+      "date": "2026-08-08",
+      "slug": "learning-and-optimization",
+      "title": "Make the model learn",
+      "core": "Understand how prediction error becomes weight change and prove the full training path by overfitting one batch.",
+      "floor": "Make loss fall on a two-parameter toy problem and derive the first Adam update by hand.",
+      "file": "curriculum/day-06-learning-and-optimization.md",
+      "tests": true
+    },
+    {
+      "day": 7,
+      "date": "2026-08-09",
+      "slug": "training-and-generation",
+      "title": "Train, sample and explain generation",
+      "core": "Train the mini-GPT on a small corpus and separate learned logits from decoding behaviour.",
+      "floor": "Implement greedy and temperature sampling, generate two contrasting samples, and explain why the weights were unchanged.",
+      "file": "curriculum/day-07-training-and-generation.md",
+      "tests": true
+    },
+    {
+      "day": 8,
+      "date": "2026-08-10",
+      "slug": "behavior-diagnostic-stack",
+      "title": "Diagnose behaviour without storytelling",
+      "core": "Learn the seven-layer diagnostic stack and apply it to controlled failure cases.",
+      "floor": "Diagnose three cases using the seven-layer stack and propose one intervention for each.",
+      "file": "curriculum/day-08-behavior-diagnostic-stack.md",
+      "tests": false
+    },
+    {
+      "day": 9,
+      "date": "2026-08-11",
+      "slug": "activations-and-logit-lens",
+      "title": "See inside: activations and the logit lens",
+      "core": "Use hooks and cached activations to locate where output-relevant information becomes decodable.",
+      "floor": "Load one supported model, cache residual activations, record their shapes, and compute one layer-wise target logit.",
+      "file": "curriculum/day-09-activations-and-logit-lens.md",
+      "tests": false
+    },
+    {
+      "day": 10,
+      "date": "2026-08-12",
+      "slug": "activation-patching",
+      "title": "Causal tracing with activation patching",
+      "core": "Replace internal activations between clean and corrupted runs to identify causally important locations.",
+      "floor": "Patch residual state at one layer across five aligned clean/corrupted pairs and compute the change in logit difference.",
+      "file": "curriculum/day-10-activation-patching.md",
+      "tests": false
+    },
+    {
+      "day": 11,
+      "date": "2026-08-13",
+      "slug": "circuits-and-ablation",
+      "title": "From locations to circuits",
+      "core": "Narrow a behaviour from layer/position localization to attention-head and MLP components using ablation and path hypotheses.",
+      "floor": "Rank all heads in one small model by one ablation metric and explain the top three without claiming completeness.",
+      "file": "curriculum/day-11-circuits-and-ablation.md",
+      "tests": false
+    },
+    {
+      "day": 12,
+      "date": "2026-08-14",
+      "slug": "post-training",
+      "title": "How post-training reshapes behaviour",
+      "core": "Separate pretraining capability from assistant behaviour by understanding SFT and preference optimization.",
+      "floor": "Implement and test dpo_loss on scalar log-probabilities, then compare five prompts across a base/instruction pair.",
+      "file": "curriculum/day-12-post-training.md",
+      "tests": true
+    },
+    {
+      "day": 13,
+      "date": "2026-08-15",
+      "slug": "original-mini-study",
+      "title": "Run an original mini-study",
+      "core": "Convert one observed LLM behaviour into a falsifiable, controlled and causally probed research question.",
+      "floor": "Define one behaviour precisely, write two competing hypotheses, construct ten examples and run one discriminating behavioural intervention.",
+      "file": "curriculum/day-13-original-mini-study.md",
+      "tests": false
+    },
+    {
+      "day": 14,
+      "date": "2026-08-16",
+      "slug": "final-defense",
+      "title": "Final defense and mechanism atlas",
+      "core": "Demonstrate closed-book command of the complete stack and convert the sprint into a durable research system.",
+      "floor": "Complete the closed-book forward-pass derivation, diagnose one unseen case, and write the next research question with two hypotheses.",
+      "file": "curriculum/day-14-final-defense.md",
+      "tests": false
+    }
+  ]
+}

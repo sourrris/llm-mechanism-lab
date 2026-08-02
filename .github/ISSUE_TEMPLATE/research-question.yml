@@ -1,0 +1,29 @@
+name: Mechanistic research question
+description: Preregister a narrow causal investigation
+title: "Research: "
+labels: [research]
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Precisely defined behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: hypotheses
+    attributes:
+      label: Competing hypotheses
+    validations:
+      required: true
+  - type: textarea
+    id: intervention
+    attributes:
+      label: Discriminating intervention and predicted outcomes
+    validations:
+      required: true
+  - type: textarea
+    id: unknown
+    attributes:
+      label: What remains unknown even if the experiment succeeds?
+    validations:
+      required: true

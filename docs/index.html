@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A proof-driven fourteen-day forge for understanding LLM mechanisms." />
+  <title>LLM Mechanism Forge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="LLM Mechanism Forge home">
+      <span class="brand-mark">λ</span>
+      <span>LLM MECHANISM FORGE</span>
+    </a>
+    <div class="topbar-status">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span id="program-state">GATE 01 OPEN</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">14 DAYS · 1 MECHANISM AT A TIME · EVIDENCE OR IT DID NOT HAPPEN</p>
+        <h1>Understand the mechanism.<br /><span>Prove the claim.</span></h1>
+        <p class="hero-description">
+          Build a transformer from numerical atoms, inspect its internals, intervene causally,
+          and defend every explanation without borrowed language.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#current-mission">Enter today’s gate</a>
+          <button class="button ghost" id="avoidance-button" type="button">I’m avoiding the work</button>
+        </div>
+      </div>
+
+      <aside class="command-card" aria-label="Current program status">
+        <div class="command-card-head">
+          <span>FORGE STATUS</span>
+          <span id="date-label">AUG 03 → AUG 16</span>
+        </div>
+        <div class="metric-grid">
+          <div class="metric">
+            <strong id="days-complete">0</strong>
+            <span>DAYS PROVED</span>
+          </div>
+          <div class="metric">
+            <strong id="current-day-number">01</strong>
+            <span>CURRENT GATE</span>
+          </div>
+          <div class="metric">
+            <strong id="completion-percent">0%</strong>
+            <span>EVIDENCE</span>
+          </div>
+          <div class="metric">
+            <strong id="floor-count">0</strong>
+            <span>FLOORS USED</span>
+          </div>
+        </div>
+        <div class="progress-rail" aria-label="Program completion">
+          <span id="progress-fill"></span>
+        </div>
+        <p class="command-line"><span>$</span> make today</p>
+      </aside>
+    </section>
+
+    <section class="shell current-mission" id="current-mission">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURRENT GATE</p>
+          <h2 id="mission-title">Loading mission…</h2>
+        </div>
+        <span class="gate-chip" id="mission-day">DAY 01</span>
+      </div>
+      <div class="mission-grid">
+        <article class="mission-main panel">
+          <p class="panel-label">MISSION</p>
+          <p class="mission-text" id="mission-core"></p>
+          <div class="mission-actions">
+            <a id="mission-file" class="text-link" href="../curriculum/day-01-text-to-probabilities.md">Open full brief ↗</a>
+            <code id="mission-command">make start DAY=1</code>
+          </div>
+        </article>
+        <article class="timer-panel panel">
+          <p class="panel-label">FIRST HARD BLOCK</p>
+          <div class="timer" id="timer" aria-live="polite">45:00</div>
+          <div class="timer-controls">
+            <button type="button" id="timer-toggle">Start</button>
+            <button type="button" id="timer-reset">Reset</button>
+          </div>
+          <p class="timer-rule">First 25 minutes: no AI. Write the prediction before touching the implementation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell protocol">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">THE OPERATING LOOP</p>
+          <h2>Difficulty becomes evidence.</h2>
+        </div>
+      </div>
+      <div class="loop" aria-label="Daily operating loop">
+        <div><span>01</span><strong>PREDICT</strong><small>Commit to an outcome</small></div>
+        <div><span>02</span><strong>BUILD</strong><small>Make the mechanism</small></div>
+        <div><span>03</span><strong>BREAK</strong><small>Violate one invariant</small></div>
+        <div><span>04</span><strong>MEASURE</strong><small>Inspect the actual signal</small></div>
+        <div><span>05</span><strong>EXPLAIN</strong><small>Closed-book reconstruction</small></div>
+        <div><span>06</span><strong>DEFEND</strong><small>Survive objections</small></div>
+        <div><span>07</span><strong>COMMIT</strong><small>Leave public evidence</small></div>
+      </div>
+    </section>
+
+    <section class="shell days-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE FOURTEEN GATES</p>
+          <h2>Build it. Open it. Intervene.</h2>
+        </div>
+        <p class="section-note">Later days remain visible, but the CLI enforces the current gate.</p>
+      </div>
+      <div class="phase-label"><span>PHASE I</span> BUILD THE MACHINE · DAYS 01–07</div>
+      <div class="days-grid" id="days-grid-build"></div>
+      <div class="phase-label second"><span>PHASE II</span> OPEN THE MACHINE · DAYS 08–14</div>
+      <div class="days-grid" id="days-grid-open"></div>
+    </section>
+
+    <section class="shell resistance" id="recovery">
+      <div class="resistance-copy">
+        <p class="eyebrow">WHEN YOUR BRAIN NEGOTIATES</p>
+        <h2>Do not rescue the whole day.<br />Enter through five minutes.</h2>
+        <p>
+          Resistance is not permission to redesign the system. Choose one small action that creates friction with reality,
+          then continue from the earliest failure.
+        </p>
+        <button class="button primary" type="button" id="new-entry-action">Give me a five-minute entry</button>
+      </div>
+      <div class="entry-card">
+        <span>DO THIS NOW</span>
+        <p id="entry-action">Write one falsifiable prediction before opening any implementation.</p>
+        <code>make recover</code>
+      </div>
+    </section>
+
+    <section class="shell evidence-section">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">WHAT COUNTS</p>
+          <h2>A claim climbs only through evidence.</h2>
+        </div>
+      </div>
+      <ol class="evidence-ladder">
+        <li><span>01</span><strong>Observation</strong><p>The behaviour occurred.</p></li>
+        <li><span>02</span><strong>Association</strong><p>An internal signal tracked it.</p></li>
+        <li><span>03</span><strong>Localization</strong><p>The signal was narrowed to components.</p></li>
+        <li><span>04</span><strong>Intervention</strong><p>Changing the component changed behaviour.</p></li>
+        <li><span>05</span><strong>Mechanism</strong><p>The model predicts counterfactual interventions.</p></li>
+        <li><span>06</span><strong>Generalization</strong><p>The explanation survives new prompts and models.</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <p>LLM MECHANISM FORGE · SOURISH CHAKRABORTY · 2026</p>
+    <p>NO RESTARTS. NO RETROFITTED PREDICTIONS. NO MECHANISM WITHOUT INTERVENTION.</p>
+  </footer>
+
+  <dialog id="avoidance-dialog">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close">×</button>
+    <p class="eyebrow">RESISTANCE DETECTED</p>
+    <h2>Reduce scope, not truth.</h2>
+    <p id="dialog-action">Write one falsifiable prediction. Nothing else is required for the next five minutes.</p>
+    <div class="dialog-commands">
+      <code>make recover</code>
+      <code id="dialog-floor">make floor DAY=1</code>
+    </div>
+    <p class="dialog-note">The floor prevents a zero. It does not close the core gate.</p>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

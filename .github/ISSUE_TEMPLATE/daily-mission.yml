@@ -1,0 +1,45 @@
+name: Daily mission evidence
+description: Record a day gate, predictions, evidence and earliest failure
+title: "Day XX: "
+labels: [day, evidence]
+body:
+  - type: input
+    id: day
+    attributes:
+      label: Day
+      placeholder: "01"
+    validations:
+      required: true
+  - type: textarea
+    id: prediction
+    attributes:
+      label: Strongest preregistered prediction
+      description: Write before running the experiment.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Executable evidence
+      description: Tests, commit, plot, metric or intervention.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Earliest failure and correction
+    validations:
+      required: true
+  - type: checkboxes
+    id: gate
+    attributes:
+      label: Gate
+      options:
+        - label: I made two independent attempts before implementation help.
+          required: true
+        - label: I kept failed predictions.
+          required: true
+        - label: I completed the closed-book explanation.
+          required: true
+        - label: `make complete DAY=N` passes.
+          required: true
