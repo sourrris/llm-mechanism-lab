@@ -41,5 +41,5 @@ body:
           required: true
         - label: I completed the closed-book explanation.
           required: true
-        - label: `make complete DAY=N` passes.
+        - label: "`make complete DAY=N` passes."
           required: true
