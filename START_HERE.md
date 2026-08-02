@@ -4,7 +4,7 @@
 
 Your ambition is useful only when it survives boredom, confusion and failed tests. This program does not attempt to make every session pleasant. It makes the hard action small enough to start and concrete enough to finish.
 
-Sign [CONTRACT.md](CONTRACT.md) before Day 1.
+Sign [CONTRACT.md](CONTRACT.md), then use [DAILY_SCHEDULE.md](DAILY_SCHEDULE.md) as the default clock before Day 1.
 
 ## 2. Set up once
 

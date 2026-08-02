@@ -60,7 +60,7 @@ PREDICT → BUILD → BREAK → MEASURE → EXPLAIN → DEFEND → COMMIT
 
 ## Your first action
 
-Read [START_HERE.md](START_HERE.md), then run:
+Read [START_HERE.md](START_HERE.md) and [DAILY_SCHEDULE.md](DAILY_SCHEDULE.md), then run:
 
 ```bash
 make start DAY=1
@@ -71,6 +71,7 @@ Do not redesign the curriculum. Do not collect more resources. Do not start anot
 ## Structure
 
 ```text
+DAILY_SCHEDULE.md    Exact weekday/weekend execution windows
 curriculum/          The 14 daily missions
 src/                 Your from-scratch implementation
 labs/                Interpretability and post-training investigations
