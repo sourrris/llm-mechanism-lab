@@ -31,7 +31,7 @@ SPECIAL_EVIDENCE = {
     7: {"decoding-grid.md": 500, "week-one-defense.md": 500},
     8: {"diagnosis.md": 1200},
     9: {"activation-summary.md": 500, "logit-lens.csv": 60},
-    10: {"patching-analysis.md": 700, "patching-result.png": 1},
+    10: {"patching-analysis.md": 700, "patching-result.png": 1024},
     11: {"circuit-report.md": 900},
     12: {"checkpoint-comparison.md": 700},
     13: {"mini-study.md": 1200, "results.csv": 80},
@@ -45,6 +45,12 @@ FIVE_MINUTE_ACTIONS = [
     "State the shape and causal role of one tensor aloud.",
     "Open today's first TODO and write only the inputs, output and equation.",
 ]
+
+CSV_HEADERS = {
+    "training-curve.csv": "step,loss,gradient_norm,learning_rate,notes\n",
+    "logit-lens.csv": "prompt,position,layer,target_token,rank,logit,logit_difference\n",
+    "results.csv": "example_id,split,condition,seed,metric,output,notes\n",
+}
 
 
 def load_index() -> dict:
@@ -119,7 +125,10 @@ def start_day(day: int) -> None:
         if not path.exists():
             if path.suffix == ".png":
                 continue
-            path.write_text(f"# Day {day:02d} — {filename}\n\n", encoding="utf-8")
+            if path.suffix == ".csv":
+                path.write_text(CSV_HEADERS[filename], encoding="utf-8")
+            else:
+                path.write_text(f"# Day {day:02d} — {filename}\n\n", encoding="utf-8")
     print(f"Started Day {day:02d}: {record['title']}")
     print(f"Mission: {record['core']}")
     print(f"Open: {record['file']}")
@@ -129,8 +138,14 @@ def start_day(day: int) -> None:
 def meaningful_size(path: Path) -> int:
     """Count user-authored evidence, not prefilled template scaffolding."""
     if path.suffix.lower() == ".png":
-        return path.stat().st_size if path.exists() else 0
+        if not path.exists():
+            return 0
+        header = path.read_bytes()[:8]
+        return path.stat().st_size if header == b"\x89PNG\r\n\x1a\n" else 0
     text = path.read_text(encoding="utf-8") if path.exists() else ""
+    if path.suffix.lower() == ".csv":
+        rows = [line for line in text.splitlines()[1:] if line.strip()]
+        return len("\n".join(rows))
     useful_lines: list[str] = []
     for raw in text.splitlines():
         line = raw.strip()
@@ -244,6 +259,11 @@ def complete_day(day: int) -> None:
 
 def mark_floor(day: int) -> None:
     progress = load_progress()
+    current = int(progress.get("current_day", 1))
+    if current > 14:
+        raise SystemExit("The forge is already complete; no floor is needed.")
+    if day != current:
+        raise SystemExit(f"Current gate is Day {current:02d}; a floor may be recorded only for that day.")
     floors = sorted(set(progress.get("floor_days", [])) | {day})
     progress["floor_days"] = floors
     save_progress(progress)
@@ -294,7 +314,11 @@ def show_today() -> None:
 
 def recover() -> None:
     progress = load_progress()
-    day = min(int(progress.get("current_day", 1)), 14)
+    current = int(progress.get("current_day", 1))
+    if current > 14:
+        print("The 14-day forge is complete. Recovery now means starting the next research cycle, not repeating the sprint.")
+        return
+    day = current
     record = day_record(day)
     print("RECOVERY MODE")
     print("1. Do not restart or redesign the plan.")
