@@ -74,7 +74,8 @@ Do not redesign the curriculum. Do not collect more resources. Do not start anot
 DAILY_SCHEDULE.md    Exact weekday/weekend execution windows
 curriculum/          The 14 daily missions
 src/                 Your from-scratch implementation
-labs/                Interpretability and post-training investigations
+data/                Included synthetic corpus for plumbing experiments
+labs/                Training, interpretability and intervention scaffolds
 tests/               Day-specific executable gates
 evidence/            Predictions, explanations, results and oral defenses
 mechanism-atlas/      Your compressed causal map of LLMs

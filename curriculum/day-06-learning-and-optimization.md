@@ -31,7 +31,7 @@ Take a ten-minute break between long blocks. Stop adding resources once the next
 ## You must do yourself
 
 - Implement AdamW in optim.py, including moments, bias correction and decoupled weight decay.
-- Create a training loop with gradient zeroing, clipping, evaluation and checkpoint saving.
+- Implement the training primitives in `training.py`, then complete `labs/day06_overfit_batch.py` with gradient zeroing, clipping, evaluation and checkpoint saving.
 - Overfit one fixed batch until loss falls dramatically.
 - Save step, loss, gradient norm and learning rate to evidence/day-06/training-curve.csv.
 

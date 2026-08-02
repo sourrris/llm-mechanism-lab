@@ -31,7 +31,7 @@ Take a ten-minute break between long blocks. Stop adding resources once the next
 ## You must do yourself
 
 - Implement temperature, top-k, top-p and sampling in generation.py.
-- Train the model on a small text or code corpus and save a checkpoint.
+- Complete `labs/day07_train_and_sample.py`; train on `data/tiny_corpus.txt` or another legally usable small corpus and save a checkpoint.
 - Generate from the same prompt under at least twelve decoding settings.
 - Write a conceptual KV-cache shape and memory trace; implementing the cache is a stretch task.
 

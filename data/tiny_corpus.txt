@@ -1,0 +1,944 @@
+Experiment cycle 00.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Prediction comes before measurement.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A correlation is not yet a mechanism.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A causal claim needs an intervention.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A failed prediction is preserved and revised.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Tensor shapes constrain what a computation can do.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Prediction comes before measurement.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A correlation is not yet a mechanism.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 01.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A correlation is not yet a mechanism.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A causal claim needs an intervention.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A failed prediction is preserved and revised.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Tensor shapes constrain what a computation can do.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Prediction comes before measurement.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A correlation is not yet a mechanism.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A causal claim needs an intervention.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 02.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A causal claim needs an intervention.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A failed prediction is preserved and revised.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Prediction comes before measurement.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A correlation is not yet a mechanism.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A causal claim needs an intervention.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A failed prediction is preserved and revised.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 03.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A failed prediction is preserved and revised.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Prediction comes before measurement.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A correlation is not yet a mechanism.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A causal claim needs an intervention.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A failed prediction is preserved and revised.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 04.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Prediction comes before measurement.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A correlation is not yet a mechanism.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A causal claim needs an intervention.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A failed prediction is preserved and revised.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Tensor shapes constrain what a computation can do.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 05.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Tensor shapes constrain what a computation can do.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Prediction comes before measurement.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A correlation is not yet a mechanism.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A causal claim needs an intervention.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A failed prediction is preserved and revised.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Tensor shapes constrain what a computation can do.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Prediction comes before measurement.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 06.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Prediction comes before measurement.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A correlation is not yet a mechanism.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A causal claim needs an intervention.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A failed prediction is preserved and revised.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Tensor shapes constrain what a computation can do.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Prediction comes before measurement.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A correlation is not yet a mechanism.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 07.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A correlation is not yet a mechanism.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A causal claim needs an intervention.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A failed prediction is preserved and revised.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Tensor shapes constrain what a computation can do.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Prediction comes before measurement.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A correlation is not yet a mechanism.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A causal claim needs an intervention.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 08.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A causal claim needs an intervention.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A failed prediction is preserved and revised.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Prediction comes before measurement.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A correlation is not yet a mechanism.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A causal claim needs an intervention.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A failed prediction is preserved and revised.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 09.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A failed prediction is preserved and revised.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Prediction comes before measurement.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A correlation is not yet a mechanism.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A causal claim needs an intervention.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A failed prediction is preserved and revised.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 10.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Prediction comes before measurement.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A correlation is not yet a mechanism.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A causal claim needs an intervention.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A failed prediction is preserved and revised.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Tensor shapes constrain what a computation can do.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 11.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Tensor shapes constrain what a computation can do.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Prediction comes before measurement.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A correlation is not yet a mechanism.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A causal claim needs an intervention.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A failed prediction is preserved and revised.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Tensor shapes constrain what a computation can do.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Prediction comes before measurement.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 12.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Prediction comes before measurement.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A correlation is not yet a mechanism.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A causal claim needs an intervention.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A failed prediction is preserved and revised.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Tensor shapes constrain what a computation can do.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Prediction comes before measurement.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A correlation is not yet a mechanism.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 13.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A correlation is not yet a mechanism.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A causal claim needs an intervention.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A failed prediction is preserved and revised.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Tensor shapes constrain what a computation can do.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Prediction comes before measurement.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A correlation is not yet a mechanism.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A causal claim needs an intervention.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 14.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A causal claim needs an intervention.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A failed prediction is preserved and revised.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Prediction comes before measurement.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A correlation is not yet a mechanism.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A causal claim needs an intervention.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A failed prediction is preserved and revised.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 15.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A failed prediction is preserved and revised.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Prediction comes before measurement.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A correlation is not yet a mechanism.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A causal claim needs an intervention.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A failed prediction is preserved and revised.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 16.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Prediction comes before measurement.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A correlation is not yet a mechanism.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A causal claim needs an intervention.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A failed prediction is preserved and revised.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Tensor shapes constrain what a computation can do.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 17.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Tensor shapes constrain what a computation can do.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Prediction comes before measurement.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A correlation is not yet a mechanism.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A causal claim needs an intervention.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A failed prediction is preserved and revised.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Tensor shapes constrain what a computation can do.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Prediction comes before measurement.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 18.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Prediction comes before measurement.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A correlation is not yet a mechanism.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A causal claim needs an intervention.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A failed prediction is preserved and revised.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Tensor shapes constrain what a computation can do.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Prediction comes before measurement.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A correlation is not yet a mechanism.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 19.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A correlation is not yet a mechanism.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A causal claim needs an intervention.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A failed prediction is preserved and revised.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Tensor shapes constrain what a computation can do.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Prediction comes before measurement.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A correlation is not yet a mechanism.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A causal claim needs an intervention.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 20.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A causal claim needs an intervention.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A failed prediction is preserved and revised.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Prediction comes before measurement.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A correlation is not yet a mechanism.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A causal claim needs an intervention.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A failed prediction is preserved and revised.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 21.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A failed prediction is preserved and revised.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Prediction comes before measurement.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A correlation is not yet a mechanism.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A causal claim needs an intervention.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A failed prediction is preserved and revised.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 22.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Prediction comes before measurement.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A correlation is not yet a mechanism.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A causal claim needs an intervention.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A failed prediction is preserved and revised.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Tensor shapes constrain what a computation can do.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 23.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Tensor shapes constrain what a computation can do.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Prediction comes before measurement.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A correlation is not yet a mechanism.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A causal claim needs an intervention.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A failed prediction is preserved and revised.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Tensor shapes constrain what a computation can do.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Prediction comes before measurement.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 24.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Prediction comes before measurement.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A correlation is not yet a mechanism.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A causal claim needs an intervention.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A failed prediction is preserved and revised.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Tensor shapes constrain what a computation can do.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Prediction comes before measurement.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A correlation is not yet a mechanism.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 25.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A correlation is not yet a mechanism.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A causal claim needs an intervention.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A failed prediction is preserved and revised.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Tensor shapes constrain what a computation can do.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Prediction comes before measurement.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A correlation is not yet a mechanism.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A causal claim needs an intervention.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 26.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A causal claim needs an intervention.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A failed prediction is preserved and revised.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Prediction comes before measurement.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A correlation is not yet a mechanism.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A causal claim needs an intervention.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A failed prediction is preserved and revised.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 27.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A failed prediction is preserved and revised.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Prediction comes before measurement.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A correlation is not yet a mechanism.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A causal claim needs an intervention.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A failed prediction is preserved and revised.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 28.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Prediction comes before measurement.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A correlation is not yet a mechanism.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A causal claim needs an intervention.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A failed prediction is preserved and revised.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Tensor shapes constrain what a computation can do.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 29.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Tensor shapes constrain what a computation can do.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Prediction comes before measurement.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A correlation is not yet a mechanism.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A causal claim needs an intervention.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A failed prediction is preserved and revised.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Tensor shapes constrain what a computation can do.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Prediction comes before measurement.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 30.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+Prediction comes before measurement.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A correlation is not yet a mechanism.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A causal claim needs an intervention.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A failed prediction is preserved and revised.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Tensor shapes constrain what a computation can do.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+Prediction comes before measurement.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A correlation is not yet a mechanism.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 31.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A correlation is not yet a mechanism.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A causal claim needs an intervention.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+A failed prediction is preserved and revised.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Tensor shapes constrain what a computation can do.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+Prediction comes before measurement.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A correlation is not yet a mechanism.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A causal claim needs an intervention.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 32.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A causal claim needs an intervention.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+A failed prediction is preserved and revised.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+Prediction comes before measurement.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A correlation is not yet a mechanism.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A causal claim needs an intervention.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+A failed prediction is preserved and revised.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 33.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+A failed prediction is preserved and revised.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+Prediction comes before measurement.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A correlation is not yet a mechanism.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A causal claim needs an intervention.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+A failed prediction is preserved and revised.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
+
+Experiment cycle 34.
+In a decoder-only language model, attention routes weighted value vectors from earlier visible positions.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if attention is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the residual stream carries the evolving representation through every block.
+Tensor shapes constrain what a computation can do.
+Question: what changes if the residual stream is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the tokenizer turns UTF-8 bytes into a learned sequence of discrete token identifiers.
+Prediction comes before measurement.
+Question: what changes if the tokenizer is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, the MLP transforms information independently at each sequence position.
+A correlation is not yet a mechanism.
+Question: what changes if the MLP is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, cross entropy penalizes low probability on the observed next token.
+A causal claim needs an intervention.
+Question: what changes if cross entropy is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, AdamW combines adaptive moments with decoupled parameter decay.
+A failed prediction is preserved and revised.
+Question: what changes if AdamW is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, temperature rescales logit differences before a token is sampled.
+The earliest violated invariant is the useful debugging target.
+Question: what changes if temperature is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+In a decoder-only language model, activation patching tests whether replacing an internal state restores a target behaviour.
+Tensor shapes constrain what a computation can do.
+Question: what changes if activation patching is ablated? Answer: predict first, intervene second, and measure the target logit difference.
+Known facts are separated from inference, speculation, and unknowns.
