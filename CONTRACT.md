@@ -18,5 +18,5 @@ I accept:
 - I will make one evidence-bearing commit for every completed day.
 - I will state unknowns directly rather than inventing a mechanism.
 
-**Signature:** ____________________  
+**Signature:** Sourish Chakraborty
 **Commit hash:** ____________________
